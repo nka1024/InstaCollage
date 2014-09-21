@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84012E1B19CD5B2D007BD29F /* ICPhotoPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E1A19CD5B2D007BD29F /* ICPhotoPickerView.m */; };
+		84012E2119CD98C9007BD29F /* ICPhotoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2019CD98C9007BD29F /* ICPhotoPickerCell.m */; };
+		84012E2419CDD643007BD29F /* ICPhotoPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */; };
+		84012E2719CE16A7007BD29F /* CollageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2619CE16A7007BD29F /* CollageMaker.m */; };
+		84012E2A19CE2EA6007BD29F /* ICPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */; };
 		8412B51119CD277B00007250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B51019CD277B00007250 /* main.m */; };
 		8412B51419CD277B00007250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B51319CD277B00007250 /* AppDelegate.m */; };
 		8412B51619CD277B00007250 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8412B51519CD277B00007250 /* Images.xcassets */; };
-		8412B51919CD277B00007250 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8412B51719CD277B00007250 /* LaunchScreen.xib */; };
 		8412B52519CD277B00007250 /* InstaCollageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B52419CD277B00007250 /* InstaCollageTests.m */; };
+		8412B53619CD28E200007250 /* ICRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B53519CD28E200007250 /* ICRootViewController.m */; };
+		8412B53B19CD290800007250 /* ICRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B53A19CD290800007250 /* ICRootView.m */; };
+		8412B53E19CD3AEA00007250 /* ICPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B53D19CD3AEA00007250 /* ICPhotoPickerViewController.m */; };
+		8412B54219CD448400007250 /* InstagramAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B54119CD448400007250 /* InstagramAPIHelper.m */; };
+		8436F5FE19CE640C00B59821 /* AppDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436F5FD19CE640C00B59821 /* AppDimensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +34,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84012E1919CD5B2D007BD29F /* ICPhotoPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerView.h; sourceTree = "<group>"; };
+		84012E1A19CD5B2D007BD29F /* ICPhotoPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerView.m; sourceTree = "<group>"; };
+		84012E1F19CD98C9007BD29F /* ICPhotoPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerCell.h; sourceTree = "<group>"; };
+		84012E2019CD98C9007BD29F /* ICPhotoPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerCell.m; sourceTree = "<group>"; };
+		84012E2219CDD643007BD29F /* ICPhotoPickerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerLayout.h; sourceTree = "<group>"; };
+		84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerLayout.m; sourceTree = "<group>"; };
+		84012E2519CE16A7007BD29F /* CollageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageMaker.h; sourceTree = "<group>"; };
+		84012E2619CE16A7007BD29F /* CollageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageMaker.m; sourceTree = "<group>"; };
+		84012E2819CE2EA6007BD29F /* ICPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPreviewViewController.h; sourceTree = "<group>"; };
+		84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPreviewViewController.m; sourceTree = "<group>"; };
 		8412B50B19CD277B00007250 /* InstaCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8412B50F19CD277B00007250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8412B51019CD277B00007250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8412B51219CD277B00007250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8412B51319CD277B00007250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8412B51519CD277B00007250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8412B51819CD277B00007250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8412B51E19CD277B00007250 /* InstaCollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCollageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8412B52319CD277B00007250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8412B52419CD277B00007250 /* InstaCollageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaCollageTests.m; sourceTree = "<group>"; };
+		8412B53419CD28E200007250 /* ICRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRootViewController.h; sourceTree = "<group>"; };
+		8412B53519CD28E200007250 /* ICRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRootViewController.m; sourceTree = "<group>"; };
+		8412B53919CD290800007250 /* ICRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRootView.h; sourceTree = "<group>"; };
+		8412B53A19CD290800007250 /* ICRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRootView.m; sourceTree = "<group>"; };
+		8412B53C19CD3AEA00007250 /* ICPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerViewController.h; sourceTree = "<group>"; };
+		8412B53D19CD3AEA00007250 /* ICPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerViewController.m; sourceTree = "<group>"; };
+		8412B54019CD448400007250 /* InstagramAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramAPIHelper.h; sourceTree = "<group>"; };
+		8412B54119CD448400007250 /* InstagramAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramAPIHelper.m; sourceTree = "<group>"; };
+		8436F5FC19CE640C00B59821 /* AppDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDimensions.h; sourceTree = "<group>"; };
+		8436F5FD19CE640C00B59821 /* AppDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDimensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +104,16 @@
 		8412B50D19CD277B00007250 /* InstaCollage */ = {
 			isa = PBXGroup;
 			children = (
-				8412B51219CD277B00007250 /* AppDelegate.h */,
-				8412B51319CD277B00007250 /* AppDelegate.m */,
+				8436F5FC19CE640C00B59821 /* AppDimensions.h */,
+				8436F5FD19CE640C00B59821 /* AppDimensions.m */,
+				84012E2519CE16A7007BD29F /* CollageMaker.h */,
+				84012E2619CE16A7007BD29F /* CollageMaker.m */,
 				8412B51519CD277B00007250 /* Images.xcassets */,
-				8412B51719CD277B00007250 /* LaunchScreen.xib */,
+				8412B54019CD448400007250 /* InstagramAPIHelper.h */,
+				8412B54119CD448400007250 /* InstagramAPIHelper.m */,
 				8412B50E19CD277B00007250 /* Supporting Files */,
+				8412B53719CD28E700007250 /* View */,
+				8412B53819CD28F000007250 /* View Controller */,
 			);
 			path = InstaCollage;
 			sourceTree = "<group>";
@@ -88,6 +121,8 @@
 		8412B50E19CD277B00007250 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8412B51219CD277B00007250 /* AppDelegate.h */,
+				8412B51319CD277B00007250 /* AppDelegate.m */,
 				8412B50F19CD277B00007250 /* Info.plist */,
 				8412B51019CD277B00007250 /* main.m */,
 			);
@@ -109,6 +144,34 @@
 				8412B52319CD277B00007250 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8412B53719CD28E700007250 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8412B53919CD290800007250 /* ICRootView.h */,
+				8412B53A19CD290800007250 /* ICRootView.m */,
+				84012E1919CD5B2D007BD29F /* ICPhotoPickerView.h */,
+				84012E1A19CD5B2D007BD29F /* ICPhotoPickerView.m */,
+				84012E1F19CD98C9007BD29F /* ICPhotoPickerCell.h */,
+				84012E2019CD98C9007BD29F /* ICPhotoPickerCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8412B53819CD28F000007250 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8412B53419CD28E200007250 /* ICRootViewController.h */,
+				8412B53519CD28E200007250 /* ICRootViewController.m */,
+				8412B53C19CD3AEA00007250 /* ICPhotoPickerViewController.h */,
+				8412B53D19CD3AEA00007250 /* ICPhotoPickerViewController.m */,
+				84012E2219CDD643007BD29F /* ICPhotoPickerLayout.h */,
+				84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */,
+				84012E2819CE2EA6007BD29F /* ICPreviewViewController.h */,
+				84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +218,7 @@
 		8412B50319CD277B00007250 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = IC;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Kirill Nepomnyaschy";
 				TargetAttributes = {
@@ -191,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8412B51919CD277B00007250 /* LaunchScreen.xib in Resources */,
 				8412B51619CD277B00007250 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +273,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84012E2719CE16A7007BD29F /* CollageMaker.m in Sources */,
+				8412B54219CD448400007250 /* InstagramAPIHelper.m in Sources */,
 				8412B51419CD277B00007250 /* AppDelegate.m in Sources */,
+				84012E2119CD98C9007BD29F /* ICPhotoPickerCell.m in Sources */,
+				8436F5FE19CE640C00B59821 /* AppDimensions.m in Sources */,
+				84012E2A19CE2EA6007BD29F /* ICPreviewViewController.m in Sources */,
 				8412B51119CD277B00007250 /* main.m in Sources */,
+				8412B53B19CD290800007250 /* ICRootView.m in Sources */,
+				84012E1B19CD5B2D007BD29F /* ICPhotoPickerView.m in Sources */,
+				84012E2419CDD643007BD29F /* ICPhotoPickerLayout.m in Sources */,
+				8412B53E19CD3AEA00007250 /* ICPhotoPickerViewController.m in Sources */,
+				8412B53619CD28E200007250 /* ICRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,17 +305,6 @@
 			targetProxy = 8412B51F19CD277B00007250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8412B51719CD277B00007250 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8412B51819CD277B00007250 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8412B52619CD277B00007250 /* Debug */ = {
@@ -327,9 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = InstaCollage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InstaCollage;
 			};
 			name = Debug;
 		};
@@ -337,9 +401,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = InstaCollage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InstaCollage;
 			};
 			name = Release;
 		};
@@ -357,7 +423,7 @@
 				);
 				INFOPLIST_FILE = InstaCollageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InstaCollageTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaCollage.app/InstaCollage";
 			};
 			name = Debug;
@@ -372,7 +438,7 @@
 				);
 				INFOPLIST_FILE = InstaCollageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InstaCollageTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaCollage.app/InstaCollage";
 			};
 			name = Release;
@@ -396,6 +462,7 @@
 				8412B52A19CD277B00007250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8412B52B19CD277B00007250 /* Build configuration list for PBXNativeTarget "InstaCollageTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +471,7 @@
 				8412B52D19CD277B00007250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
