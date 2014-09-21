@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define INSTAGRAM_MAX_PHOTOS_TO_LOAD 99999
-
 #define INSTAGRAM_CLIENT_ID @"83e22525ee61429ba2800406935aa1d6"
 
 #define INSTAGRAM_PATH_LIKES_COUNT          @"likes.count"
@@ -24,12 +22,14 @@
 
 @interface InstagramAPIHelper : NSObject
 
-+(NSURL*)makeUserSearchURLWithQuery:(NSString *)query;
-+(NSURL*)makeUserMediaURL:(NSString *)userId;
++(NSURL *)makeUserSearchURLWithQuery:(NSString *)query;
++(NSURL *)makeUserMediaURL:(NSString *)userId;
 
 +(NSString *)extractUserId:(NSDictionary *)data forUsername:(NSString *)username;
-+(NSArray *)extractBestPhotos:(NSDictionary *)data count:(NSInteger)count;
 +(NSString *)extractThumbnailURL:(NSDictionary *)data;
++(NSArray *)extractPhotos:(NSDictionary *)data;
++(NSURL *)extractNextURL:(NSDictionary *)data;
 
-+(NSString *)extractNextURL:(NSDictionary *)data;
++(NSArray *)sortPhotosByLikesCount:(NSArray *)photos;
+
 @end

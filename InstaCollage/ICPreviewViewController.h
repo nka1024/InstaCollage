@@ -11,5 +11,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface ICPreviewViewController : UIViewController <UIScrollViewDelegate, MFMailComposeViewControllerDelegate>
+
 @property (strong, nonatomic) NSArray *imagesToMerge;
+
 @end

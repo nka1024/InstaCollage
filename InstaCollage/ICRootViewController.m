@@ -9,7 +9,9 @@
 #import "ICRootViewController.h"
 
 @interface ICRootViewController ()
+
 @property (strong, nonatomic) ICRootView *rootView;
+
 @end
 
 @implementation ICRootViewController
@@ -17,10 +19,9 @@
 - (instancetype)init
 {
     self = [super init];
-    if (self) {
-
-        self.rootView = [[ICRootView alloc] init];
-        self.view = self.rootView;
+    if (self)
+    {
+        self.view = self.rootView = [[ICRootView alloc] init];
         
         [self.rootView.submitButton addTarget:self
                                        action:@selector(handleSumbitClick:)
@@ -29,8 +30,8 @@
     return self;
 }
 
--(void)handleSumbitClick:(id)action {
-    
+-(void)handleSumbitClick:(id)action
+{
     ICPhotoPickerViewController *photoPickerVC = [[ICPhotoPickerViewController alloc] init];
     
     photoPickerVC.username = self.rootView.textField.text;
@@ -41,14 +42,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     [self.navigationController setNavigationBarHidden:YES];
 }
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-//    [self handleSumbitClick:nil];
-}
-
 
 @end

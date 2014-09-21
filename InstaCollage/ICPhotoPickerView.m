@@ -25,6 +25,10 @@
         layout.minimumLineSpacing = 0;
         
         self.allowsMultipleSelection = YES;
+        
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [spinner setColor:[UIColor blackColor]];
+        [self addSubview:spinner];
     }
     return self;
 }

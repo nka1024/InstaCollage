@@ -22,7 +22,7 @@
     {
         if (gridSize.width * gridSize.height < MAX_S)
         {
-            const BOOL TOO_WIDE = (gridSize.width * w / (w + h)) < (gridSize.height * h / (w + h));
+            const BOOL TOO_WIDE = ((gridSize.width + 3) * w / (w + h)) < (gridSize.height * h / (w + h));
             const BOOL LAST_COLUMN = MAX_S - i >= gridSize.height;
             
             if (TOO_WIDE && LAST_COLUMN)
@@ -47,19 +47,19 @@
     const NSInteger MAX_ROW = gridSize.height;
     const NSInteger MAX_COL = gridSize.width;
     
-    CGSize contextSize = {gridSize.width * IMAGE_WIDTH, gridSize.height * IMAGE_HEIGHT};
+    CGSize contextSize = {(gridSize.width + 1) * IMAGE_WIDTH, (gridSize.height + 1) * IMAGE_HEIGHT};
     
     UIGraphicsBeginImageContext(contextSize);
     
     NSInteger imageIdx = 0;
-    for (NSInteger rowIdx = 0; rowIdx < MAX_ROW; rowIdx++)
+    for (NSInteger rowIdx = 0; rowIdx <= MAX_ROW; rowIdx++)
     {
-        for (NSInteger colIdx = 0; colIdx < MAX_COL; colIdx++)
+        for (NSInteger colIdx = 0; colIdx <= MAX_COL; colIdx++)
         {
             if (imageIdx < images.count)
             {
                 UIImage * image = images[imageIdx];
-                
+
                 [image drawInRect:CGRectMake(colIdx * IMAGE_WIDTH,
                                              rowIdx * IMAGE_HEIGHT,
                                              IMAGE_WIDTH,

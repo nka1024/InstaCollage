@@ -18,12 +18,11 @@
 
 @implementation ICPreviewViewController
 
-
 - (instancetype)init
 {
     self = [super init];
-    if (self) {
-        
+    if (self)
+    {
         UIBarButtonItem *sendButton =
         [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                                       target:self
@@ -31,6 +30,7 @@
         
         self.navigationItem.rightBarButtonItem = sendButton;
         self.view = self.scrollView = [[UIScrollView alloc] init];
+        self.view.backgroundColor = [UIColor whiteColor];
         
         self.scrollView.delegate = self;
         [self.scrollView addSubview:self.imageView];
@@ -40,10 +40,10 @@
 }
 
 
--(void)handleSendButtonTap:(id)action {
-    
-    if ([MFMailComposeViewController canSendMail]) {
-        
+-(void)handleSendButtonTap:(id)action
+{
+    if ([MFMailComposeViewController canSendMail])
+    {
         MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
         
         mailComposer.mailComposeDelegate = self;
@@ -63,16 +63,19 @@
 #pragma mark -
 #pragma mark Getters & setters
 
--(UIImageView *)imageView {
+-(UIImageView *)imageView
+{
     if (!_imageView)  _imageView = [[UIImageView alloc] init];
     return _imageView;
 }
 
--(UIImage *)image {
+-(UIImage *)image
+{
     return self.imageView.image;
 }
 
--(void)setImage:(UIImage *)image {
+-(void)setImage:(UIImage *)image
+{
     [self.imageView setImage:image];
     [self.imageView sizeToFit];
 }
@@ -81,8 +84,8 @@
 #pragma mark -
 #pragma mark Interface implementation
 
--(void)setImagesToMerge:(NSArray *)imagesToMerge {
-
+-(void)setImagesToMerge:(NSArray *)imagesToMerge
+{
     dispatch_queue_t mergeQ = dispatch_queue_create("merge_queqe", NULL);
     dispatch_async(mergeQ, ^{
         
@@ -96,6 +99,8 @@
             self.scrollView.minimumZoomScale = frame.size.width / self.image.size.width;
             self.scrollView.maximumZoomScale = 1;
             self.scrollView.contentSize = self.image ? self.image.size : CGSizeZero;
+            
+            self.scrollView.zoomScale = self.scrollView.minimumZoomScale;
         });
     });
 }
@@ -106,8 +111,8 @@
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller
          didFinishWithResult:(MFMailComposeResult)result
-                       error:(NSError *)error {
-
+                       error:(NSError *)error
+{
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -115,11 +120,9 @@
 #pragma mark -
 #pragma mark UIScrollViewDelegate
 
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
     return self.imageView;
 }
 
 @end
-
-
-
