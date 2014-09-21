@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>239C8B67-8975-4333-A0E2-AD9E7D1B3E17</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InstaCollage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89399DD3B390C6DC40006260573FE3F04140786B</key>
+		<string>https://github.com/nka1024/InstaCollage.git</string>
+		<key>D6841F3B10E1C1D42944EF75FC4F353C1321CE7C</key>
+		<string>https://github.com/nka1024/InstaCollage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InstaCollage.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89399DD3B390C6DC40006260573FE3F04140786B</key>
+		<string>../..InstaCollage/</string>
+		<key>D6841F3B10E1C1D42944EF75FC4F353C1321CE7C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nka1024/InstaCollage.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D6841F3B10E1C1D42944EF75FC4F353C1321CE7C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6841F3B10E1C1D42944EF75FC4F353C1321CE7C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstaCollage</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89399DD3B390C6DC40006260573FE3F04140786B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstaCollage</string>
+		</dict>
+	</array>
+</dict>
+</plist>
