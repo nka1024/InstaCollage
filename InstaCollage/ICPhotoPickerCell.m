@@ -18,6 +18,8 @@
         self.photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         self.checkImageView = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, 24, 24)];
 
+        self.checkImageView.image = [UIImage imageNamed:@"check_off.png"];
+        
         [self.contentView addSubview:self.photoImageView];
         [self.contentView addSubview:self.checkImageView];
     }

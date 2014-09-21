@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) UIImageView *photoImageView;
 @property (strong, nonatomic) UIImageView *checkImageView;
+@property (strong, nonatomic) NSString *photoUrl;
 
 @end

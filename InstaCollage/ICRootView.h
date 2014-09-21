@@ -12,6 +12,8 @@
 @interface ICRootView : UIView
 
 @property (strong, nonatomic) UIButton *submitButton;
+@property (strong, nonatomic) UIButton *cancelButton;
 @property (strong, nonatomic) UITextField *textField;
+@property (strong, nonatomic) UIActivityIndicatorView* spinner;
 
 @end

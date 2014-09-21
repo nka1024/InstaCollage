@@ -10,9 +10,6 @@
 
 @implementation ICRootView
 
-@synthesize submitButton = _submitButton;
-@synthesize textField = _textField;
-
 - (instancetype)init
 {
     self = [super initWithFrame:CGRectZero];
@@ -20,12 +17,22 @@
     {
         self.backgroundColor = [UIColor whiteColor];
         
+        ////////////////////////////////
+        //
+        //      Username form
+        //
+        ////////////////////////////////
+        
+        // UITextField
+        
         self.textField = [[UITextField alloc] initWithFrame:CGRectZero];
         [self.textField setBorderStyle:UITextBorderStyleRoundedRect];
-//        _textField.text = @"katerina_kg";
+        _textField.text = @"katerina_kg";
 //        _textField.text = @"zlata_markelova";
 //        _textField.text = @"zhannasm";
-        self.textField.text = @"mirgaeva_galinka";
+//        self.textField.text = @"mirgaeva_galinka";
+        
+        // Submit button
         
         self.submitButton = [[UIButton alloc] initWithFrame:CGRectZero];
         [self.submitButton setTitle:@"Давай коллаж" forState:UIControlStateNormal];
@@ -65,6 +72,69 @@
                                                                      options:0
                                                                      metrics:nil
                                                                        views:subviews]];
+        
+        
+        
+        ////////////////////////////////
+        //
+        //      UIActivityIndicatorView
+        //
+        ////////////////////////////////
+        
+        _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [_spinner setColor:[UIColor grayColor]];
+        [_spinner setHidden:YES];
+        [_spinner setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [self addSubview:_spinner];
+        
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_spinner
+                                                         attribute:NSLayoutAttributeCenterY
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self
+                                                         attribute:NSLayoutAttributeCenterY
+                                                        multiplier:1
+                                                          constant:0]];
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:_spinner
+                                                         attribute:NSLayoutAttributeCenterX
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self
+                                                         attribute:NSLayoutAttributeCenterX
+                                                        multiplier:1
+                                                          constant:0]];
+
+        ////////////////////////////////
+        //
+        //      UIButton: cancel
+        //
+        ////////////////////////////////
+        
+        self.cancelButton = [[UIButton alloc] initWithFrame:CGRectZero];
+        [self.cancelButton setHidden:YES];
+        [self.cancelButton setTitle:@"Отмена" forState:UIControlStateNormal];
+        [self.cancelButton setTitleColor:self.cancelButton.tintColor forState:UIControlStateNormal];
+        [self.cancelButton setTitleColor:[self.cancelButton.tintColor colorWithAlphaComponent:0.2]
+                                forState:UIControlStateHighlighted];
+        
+        [self addSubview:self.cancelButton];
+        [self.cancelButton setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.cancelButton
+                                                         attribute:NSLayoutAttributeCenterY
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self
+                                                         attribute:NSLayoutAttributeCenterY
+                                                        multiplier:1
+                                                          constant:50]];
+        
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.cancelButton
+                                                         attribute:NSLayoutAttributeCenterX
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self
+                                                         attribute:NSLayoutAttributeCenterX
+                                                        multiplier:1
+                                                          constant:0]];
         
     }
     return self;

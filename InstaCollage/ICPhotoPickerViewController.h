@@ -14,10 +14,7 @@
 
 @interface ICPhotoPickerViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
-
-
+@property (strong, nonatomic) NSArray *photos;
 @property (strong, nonatomic) NSString *username;
-
-
 
 @end
