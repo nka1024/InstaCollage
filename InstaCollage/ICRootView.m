@@ -27,10 +27,6 @@
         
         self.textField = [[UITextField alloc] initWithFrame:CGRectZero];
         [self.textField setBorderStyle:UITextBorderStyleRoundedRect];
-        _textField.text = @"katerina_kg";
-//        _textField.text = @"zlata_markelova";
-//        _textField.text = @"zhannasm";
-//        self.textField.text = @"mirgaeva_galinka";
         
         // Submit button
         
@@ -50,7 +46,7 @@
         }
         
         
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:_submitButton
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.submitButton
                                                          attribute:NSLayoutAttributeCenterY
                                                          relatedBy:NSLayoutRelationEqual
                                                             toItem:self
@@ -81,14 +77,14 @@
         //
         ////////////////////////////////
         
-        _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        [_spinner setColor:[UIColor grayColor]];
-        [_spinner setHidden:YES];
-        [_spinner setTranslatesAutoresizingMaskIntoConstraints:NO];
-        [self addSubview:_spinner];
+        self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [self.spinner setColor:[UIColor grayColor]];
+        [self.spinner setHidden:YES];
+        [self.spinner setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [self addSubview:self.spinner];
         
         
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:_spinner
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.spinner
                                                          attribute:NSLayoutAttributeCenterY
                                                          relatedBy:NSLayoutRelationEqual
                                                             toItem:self
@@ -96,7 +92,7 @@
                                                         multiplier:1
                                                           constant:0]];
         
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:_spinner
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.spinner
                                                          attribute:NSLayoutAttributeCenterX
                                                          relatedBy:NSLayoutRelationEqual
                                                             toItem:self
@@ -135,7 +131,6 @@
                                                          attribute:NSLayoutAttributeCenterX
                                                         multiplier:1
                                                           constant:0]];
-        
     }
     return self;
 }

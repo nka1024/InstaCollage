@@ -104,14 +104,9 @@
 		8412B50D19CD277B00007250 /* InstaCollage */ = {
 			isa = PBXGroup;
 			children = (
-				8436F5FC19CE640C00B59821 /* AppDimensions.h */,
-				8436F5FD19CE640C00B59821 /* AppDimensions.m */,
-				84012E2519CE16A7007BD29F /* CollageMaker.h */,
-				84012E2619CE16A7007BD29F /* CollageMaker.m */,
 				8412B51519CD277B00007250 /* Images.xcassets */,
-				8412B54019CD448400007250 /* InstagramAPIHelper.h */,
-				8412B54119CD448400007250 /* InstagramAPIHelper.m */,
 				8412B50E19CD277B00007250 /* Supporting Files */,
+				8436F5FF19CEDCC000B59821 /* Util */,
 				8412B53719CD28E700007250 /* View */,
 				8412B53819CD28F000007250 /* View Controller */,
 			);
@@ -172,6 +167,19 @@
 				84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */,
 			);
 			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		8436F5FF19CEDCC000B59821 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8436F5FC19CE640C00B59821 /* AppDimensions.h */,
+				8436F5FD19CE640C00B59821 /* AppDimensions.m */,
+				84012E2519CE16A7007BD29F /* CollageMaker.h */,
+				84012E2619CE16A7007BD29F /* CollageMaker.m */,
+				8412B54019CD448400007250 /* InstagramAPIHelper.h */,
+				8412B54119CD448400007250 /* InstagramAPIHelper.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
