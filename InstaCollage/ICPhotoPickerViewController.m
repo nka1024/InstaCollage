@@ -168,14 +168,8 @@ static NSString *PHOTO_PICKER_CELL_IDENTIFIER = @"PhotoPickerCell";
                         [cell.checkImageView setHidden:NO];
                         [cell.photoImageView setHidden:NO];
                         
-//                        [self.photoPickerView selectItemAtIndexPath:indexPath
-//                                                           animated:YES
-//                                                     scrollPosition:UICollectionViewScrollPositionNone];
-                        
-//                        [self.selectedImages insertObject:image atIndex:self.selectedImages.count];
                         [self updateDoneButtonState];
                         [cell setSelected:cell.selected];
-                        
                     });
                 }
             }];
