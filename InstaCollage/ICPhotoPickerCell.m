@@ -32,6 +32,4 @@
     self.checkImageView.image = [UIImage imageNamed:(selected ? @"check_on.png" : @"check_off.png")];
 }
 
-
-
 @end

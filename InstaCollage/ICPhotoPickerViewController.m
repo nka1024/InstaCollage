@@ -59,7 +59,6 @@ static NSString *PHOTO_PICKER_CELL_IDENTIFIER = @"PhotoPickerCell";
 {
     _photos = photos;
     
-    
     dispatch_async(dispatch_get_main_queue(), ^{[self.photoPickerView reloadData];});
 }
 
@@ -155,14 +154,13 @@ static NSString *PHOTO_PICKER_CELL_IDENTIFIER = @"PhotoPickerCell";
         NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request
             completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
                 
-                NSData *imageData = [NSData dataWithContentsOfURL:location];
-                UIImage *image = [UIImage imageWithData:imageData];
-                
-                [self.imageCache setObject:image forKey:url];
-                
-                
                 if ([cell.photoUrl isEqualToString:url])
                 {
+                    NSData *imageData = [NSData dataWithContentsOfURL:location];
+                    UIImage *image = [UIImage imageWithData:imageData];
+                    
+                    [self.imageCache setObject:image forKey:url];
+                    
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [cell.photoImageView setImage:image];
                         [cell.checkImageView setHidden:NO];

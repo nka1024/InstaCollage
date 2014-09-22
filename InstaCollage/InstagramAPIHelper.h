@@ -30,6 +30,6 @@
 +(NSArray *)extractPhotos:(NSDictionary *)data;
 +(NSURL *)extractNextURL:(NSDictionary *)data;
 
-+(NSArray *)sortPhotosByLikesCount:(NSArray *)photos;
++(NSMutableArray *)sortPhotosByLikesCount:(NSArray *)photos;
 
 @end

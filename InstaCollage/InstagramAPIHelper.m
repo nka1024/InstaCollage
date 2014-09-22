@@ -12,13 +12,15 @@
 
 +(NSURL *)makeUserSearchURLWithQuery:(NSString *)query
 {
-    return [NSURL URLWithString:[NSString stringWithFormat:@"https://api.instagram.com/v1/users/search?q=%@&client_id=%@", query, INSTAGRAM_CLIENT_ID]];
+    NSString *urlString = [NSString stringWithFormat:@"https://api.instagram.com/v1/users/search?q=%@&client_id=%@", query, INSTAGRAM_CLIENT_ID];
+    return [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 }
 
 
 +(NSURL *)makeUserMediaURL:(NSString *)userId
 {
-    return [NSURL URLWithString:[NSString stringWithFormat:@"https://api.instagram.com/v1/users/%@/media/recent/?client_id=%@", userId, INSTAGRAM_CLIENT_ID]];
+    NSString *urlString = [NSString stringWithFormat:@"https://api.instagram.com/v1/users/%@/media/recent/?client_id=%@", userId, INSTAGRAM_CLIENT_ID];
+    return [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 }
 
 
@@ -67,7 +69,7 @@
     return photos;
 }
 
-+(NSArray *)sortPhotosByLikesCount:(NSArray *)photos
++(NSMutableArray *)sortPhotosByLikesCount:(NSArray *)photos
 {
     NSArray *sortedPhotos = [photos sortedArrayWithOptions:0
        usingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
@@ -88,7 +90,7 @@
            return result;
        }];
     
-    return sortedPhotos;
+    return sortedPhotos.mutableCopy;
 }
 
 @end

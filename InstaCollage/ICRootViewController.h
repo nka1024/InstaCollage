@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ICRootView.h"
 #import "ICPhotoPickerViewController.h"
-
+#import "ICDataCache.h"
 
 @interface ICRootViewController : UIViewController
 

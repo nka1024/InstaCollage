@@ -64,7 +64,15 @@ static const NSInteger PHOTOS_FETCH_LIMIT = 100;
     
     [_fetchedPhotos removeAllObjects];
     
-    [self startFetchingPhotos];
+    NSMutableArray *cachedData = [[ICDataCache sharedInstance].data objectForKey:_userId];
+    if (cachedData.count)
+    {
+        self.fetchedPhotos = cachedData.mutableCopy;
+        [self pushToPhotoPickerVC];
+    } else
+    {
+        [self startFetchingPhotos];
+    }
 }
 
 
@@ -117,7 +125,6 @@ static const NSInteger PHOTOS_FETCH_LIMIT = 100;
                   }
                   else
                   {
-                      
                       self.userId = userId;
                   }
               }
@@ -173,7 +180,6 @@ static const NSInteger PHOTOS_FETCH_LIMIT = 100;
 
 -(void)handlePhotosChunkFetchingComplete:(NSDictionary *) chunkData
 {
-    
     NSArray *photosChunk = [InstagramAPIHelper extractPhotos:chunkData];
     NSRange range = {self.fetchedPhotos.count, photosChunk.count};
     
@@ -188,7 +194,12 @@ static const NSInteger PHOTOS_FETCH_LIMIT = 100;
     }
     else
     {
-        self.fetchedPhotos = [InstagramAPIHelper sortPhotosByLikesCount:self.fetchedPhotos].mutableCopy;
+        self.fetchedPhotos = [InstagramAPIHelper sortPhotosByLikesCount:self.fetchedPhotos];
+        
+        NSMutableArray *copyForCache = self.fetchedPhotos.mutableCopy;
+        [[ICDataCache sharedInstance].data setObject:copyForCache forKey:self.userId];
+        NSLog(@"cached %ld entries for id %@", (long)copyForCache.count, self.userId);
+        
         [self pushToPhotoPickerVC];
     }
 }
@@ -238,7 +249,6 @@ static const NSInteger PHOTOS_FETCH_LIMIT = 100;
     [self.rootView.spinner setHidden:YES];
     [self.rootView.spinner stopAnimating];
 }
-
 
 -(void)viewWillAppear:(BOOL)animated
 {
