@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>89399DD3B390C6DC40006260573FE3F04140786B</key>
-		<string>../..InstaCollage/</string>
+		<string>../..InstaCollage</string>
 		<key>D6841F3B10E1C1D42944EF75FC4F353C1321CE7C</key>
 		<string>../..</string>
 	</dict>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>89399DD3B390C6DC40006260573FE3F04140786B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>InstaCollage</string>
+			<string>InstaCollageInstaCollage</string>
 		</dict>
 	</array>
 </dict>

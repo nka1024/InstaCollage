@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		84012E1B19CD5B2D007BD29F /* ICPhotoPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E1A19CD5B2D007BD29F /* ICPhotoPickerView.m */; };
 		84012E2119CD98C9007BD29F /* ICPhotoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2019CD98C9007BD29F /* ICPhotoPickerCell.m */; };
-		84012E2419CDD643007BD29F /* ICPhotoPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */; };
 		84012E2719CE16A7007BD29F /* CollageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2619CE16A7007BD29F /* CollageMaker.m */; };
 		84012E2A19CE2EA6007BD29F /* ICPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */; };
 		8412B51119CD277B00007250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B51019CD277B00007250 /* main.m */; };
@@ -21,6 +20,7 @@
 		8412B53E19CD3AEA00007250 /* ICPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B53D19CD3AEA00007250 /* ICPhotoPickerViewController.m */; };
 		8412B54219CD448400007250 /* InstagramAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412B54119CD448400007250 /* InstagramAPIHelper.m */; };
 		8436F5FE19CE640C00B59821 /* AppDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436F5FD19CE640C00B59821 /* AppDimensions.m */; };
+		84F83AE219D062EA0045F727 /* ICDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F83AE119D062EA0045F727 /* ICDataCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		84012E1A19CD5B2D007BD29F /* ICPhotoPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerView.m; sourceTree = "<group>"; };
 		84012E1F19CD98C9007BD29F /* ICPhotoPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerCell.h; sourceTree = "<group>"; };
 		84012E2019CD98C9007BD29F /* ICPhotoPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerCell.m; sourceTree = "<group>"; };
-		84012E2219CDD643007BD29F /* ICPhotoPickerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoPickerLayout.h; sourceTree = "<group>"; };
-		84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoPickerLayout.m; sourceTree = "<group>"; };
 		84012E2519CE16A7007BD29F /* CollageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollageMaker.h; sourceTree = "<group>"; };
 		84012E2619CE16A7007BD29F /* CollageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollageMaker.m; sourceTree = "<group>"; };
 		84012E2819CE2EA6007BD29F /* ICPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPreviewViewController.h; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		8412B54119CD448400007250 /* InstagramAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramAPIHelper.m; sourceTree = "<group>"; };
 		8436F5FC19CE640C00B59821 /* AppDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDimensions.h; sourceTree = "<group>"; };
 		8436F5FD19CE640C00B59821 /* AppDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDimensions.m; sourceTree = "<group>"; };
+		84F83AE019D062EA0045F727 /* ICDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDataCache.h; sourceTree = "<group>"; };
+		84F83AE119D062EA0045F727 /* ICDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDataCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +161,6 @@
 				8412B53519CD28E200007250 /* ICRootViewController.m */,
 				8412B53C19CD3AEA00007250 /* ICPhotoPickerViewController.h */,
 				8412B53D19CD3AEA00007250 /* ICPhotoPickerViewController.m */,
-				84012E2219CDD643007BD29F /* ICPhotoPickerLayout.h */,
-				84012E2319CDD643007BD29F /* ICPhotoPickerLayout.m */,
 				84012E2819CE2EA6007BD29F /* ICPreviewViewController.h */,
 				84012E2919CE2EA6007BD29F /* ICPreviewViewController.m */,
 			);
@@ -178,6 +176,8 @@
 				84012E2619CE16A7007BD29F /* CollageMaker.m */,
 				8412B54019CD448400007250 /* InstagramAPIHelper.h */,
 				8412B54119CD448400007250 /* InstagramAPIHelper.m */,
+				84F83AE019D062EA0045F727 /* ICDataCache.h */,
+				84F83AE119D062EA0045F727 /* ICDataCache.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -281,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F83AE219D062EA0045F727 /* ICDataCache.m in Sources */,
 				84012E2719CE16A7007BD29F /* CollageMaker.m in Sources */,
 				8412B54219CD448400007250 /* InstagramAPIHelper.m in Sources */,
 				8412B51419CD277B00007250 /* AppDelegate.m in Sources */,
@@ -290,7 +291,6 @@
 				8412B51119CD277B00007250 /* main.m in Sources */,
 				8412B53B19CD290800007250 /* ICRootView.m in Sources */,
 				84012E1B19CD5B2D007BD29F /* ICPhotoPickerView.m in Sources */,
-				84012E2419CDD643007BD29F /* ICPhotoPickerLayout.m in Sources */,
 				8412B53E19CD3AEA00007250 /* ICPhotoPickerViewController.m in Sources */,
 				8412B53619CD28E200007250 /* ICRootViewController.m in Sources */,
 			);
